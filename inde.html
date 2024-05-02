@@ -4,235 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <title>Invoice</title>
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap");
-    @import url("https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
-    body {
-      margin: 0 !important;
-      padding: 0 !important;
-      font-family: "Fira Mono", monospace;
-      background: whitesmoke;
-    }
-
-    /* common class */
-    .bold-text {
-      font-weight: 700;
-      font-size: 12px;
-    }
-
-    .normal-text {
-      font-weight: 500;
-      font-size: 12px;
-    }
-
-    /* container */
-    .invoice {
-      max-width: 595px;
-      padding: 40px;
-      margin: 30px auto;
-      background: white;
-      position: relative;
-    }
-
-    /* Header section */
-
-    .header .title h1 {
-      float: left;
-      font-family: "Work Sans", sans-serif;
-      color: #111118;
-    }
-
-    .header .logo {
-      float: right;
-      margin: 16px 0;
-    }
-
-    /* invoice information */
-    .invoice-info {
-      clear: both;
-      color: #220000;
-      line-height: 4px;
-    }
-
-    /* bill section */
-    .bill-section {
-      width: 100%;
-      overflow: hidden;
-      margin-bottom: 20px;
-      line-height: 4px;
-    }
-
-    .bill-to p:first-child,
-    .bill-from p:first-child {
-      text-transform: uppercase;
-      color: #111118;
-      font-size: 12px;
-      font-weight: 500;
-    }
-
-    .bill-to p:not(:first-child),
-    .bill-from p:not(:first-child) {
-      font-size: 12px;
-      font-weight: 400;
-    }
-
-    .bill-to {
-      float: left;
-      text-align: left;
-      width: 50%;
-    }
-
-    .bill-from {
-      float: right;
-      text-align: right;
-      width: 50%;
-    }
-
-    /*all items section */
-
-    .items {
-      width: 100%;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      line-height: 16px;
-    }
-
-    table thead {
-      border-bottom: 1px solid #bbb;
-    }
-
-    tbody:before {
-      content: "";
-      display: block;
-      height: 8px;
-    }
-
-    table td:first-child,
-    table th:first-child {
-      text-align: left;
-    }
-
-    table td:nth-child(2),
-    table td:nth-child(3),
-    table th:nth-child(2),
-    table th:nth-child(3) {
-      text-align: center;
-    }
-
-    table td:last-child,
-    table th:last-child {
-      text-align: right;
-    }
-
-    /* additional info section */
-
-    .footer-container {
-      padding-top: 20px;
-    }
-
-    .footer-header {
-      border-bottom: 1px solid #bbb;
-      height: 30px;
-    }
-
-    .footer-header p:first-child {
-      width: 50%;
-      float: left;
-      text-align: left;
-    }
-
-    .footer-header p:last-child {
-      width: 50%;
-      float: right;
-      text-align: right;
-    }
-
-    .other-info {
-      height: 100px;
-      border-bottom: 1px solid #bbb;
-    }
-
-    .other-info .terms-n-conditions {
-      float: left;
-      line-height: 4px;
-    }
-
-    .other-info .info {
-      float: right;
-    }
-
-    .other-info .info ul {
-      list-style-type: none;
-    }
-
-    /* footer button */
-
-    .footer-button {
-      margin-top: 20px;
-      height: 80px;
-    }
-
-    .signature {
-      width: 50%;
-      float: left;
-      line-height: 4px;
-    }
-
-    .dev-name {
-      font-size: 10px;
-      color: #284B63;
-      font-family: "Inter", sans-serif;
-    }
-
-    .dev-post {
-      font-family: "Inter", sans-serif;
-      font-size: 10px;
-    }
-
-    .pay-now {
-      width: 50%;
-      float: right;
-    }
-
-    .pay-now button {
-      display: block;
-      font-family: "Inter", sans-serif;
-      width: 100%;
-      padding: 8px;
-      background-color: #284B63;
-      color: white;
-      border: none;
-      font-size: 10px;
-      text-decoration: underline;
-      cursor: pointer;
-      text-align: center;
-    }
-
-    /* footer last section  */
-
-    .footer-last {
-      position: absolute;
-      bottom: 0px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 595px;
-      padding-inline: 40px;
-      height: 47px;
-      background: #284B63;
-      text-align: center;
-      color: white;
-      font-size: 12px;
-    }
-
-    .footer-last hr {
-      border: 1px solid white;
-    }
-  </style>
+ <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -334,6 +106,7 @@
       </table>
     </div>
 
+    <!-- Footer -->
     <!-- additional info section -->
 
     <div class="footer-container">
@@ -356,8 +129,8 @@
           </ul>
         </div>
       </div>
-      <!-- dev-info and pay button section -->
 
+      <!-- dev-info and pay button section -->
       <div class="footer-button">
         <div class="signature">
           <img src="./assets/path3035.png" />
@@ -379,11 +152,7 @@
         <span>Invoice us</span>
       </footer>
     </div>
-
-
-
   </div>
-
   </div>
 </body>
 
